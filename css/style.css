@@ -39,11 +39,54 @@ p {
 }
 .bottomheader {
 	background: #f93c00;
-	color: #fff;
 }
 #yourcity {
 	cursor: pointer;
 }
+.topmenu {
+	text-align: center;
+}
+.topmenu a {
+	text-decoration: none;
+	padding: 10px;
+}
+.line-point {
+	color: #fff;
+}
+.pulldown-point {
+	color: #f93c00;
+	background: #fff;
+}
+.menupoint {
+	display: inline-block;
+	position: relative;
+	margin: 0 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+.menupoint > span {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	padding: 20px 0 5px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+}
+.menupoint:hover > span,
+.menupoint > span:hover {
+	display: block;
+}
+.menupoint:hover {
+	border-color: #f93c00;
+	background: #fff;
+}
+.menupoint:hover .line-point {
+	color: #f93c00;
+}
+.pulldown-point:hover {
+	color: #000;
+}
+
 
 /* main */
 main {
