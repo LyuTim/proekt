@@ -2,12 +2,12 @@ body {
 	margin: 0;
 	font: normal 16px/24px Arial, sans-serif;
 	background: url('../images/pattern.jpg') left top repeat;
+	min-width: 320px;
 }
 p {
 	margin: 0;
 }
 .container {
-	width: 1168px;
 	margin: 0 auto;
 	padding: 16px;
 }
@@ -132,4 +132,61 @@ main {
 footer {
 	background: #316099;
 	color: #fff;
+}
+
+/* catalog */
+.catalog {
+	display: flex;
+	gap: 8px;
+}
+aside {
+	flex: none;
+	width: 180px;
+	background: brown;
+	color: #fff;
+}
+.cat-blocks {
+	flex: 1 1 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 8px;
+}
+.cat-unit {
+	height: 100px;
+	width: 100px;
+	background: pink;
+}
+
+/* different screens */
+@media (min-width: 576px) {
+	.cat-blocks {
+		gap: 32px;
+	}
+	aside {
+		width: 260px;
+	}
+	.catalog {
+		gap: 16px;
+	}
+}
+@media (min-width: 768px) {
+	.cat-blocks {
+		gap: 4px;
+	}
+}
+@media (min-width: 992px) {
+	.cat-blocks {
+		gap: 10px;
+	}
+}
+@media (min-width: 1200px) {
+	.cat-blocks {
+		gap: 22px;
+	}
+}
+@media (min-width: 1400px) {
+	.cat-blocks {
+		gap: 14px;
+	}
 }
