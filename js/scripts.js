@@ -24,10 +24,13 @@ $(function(){
         }
     });
     
-    $('.register').click(function(e){
+    $(document).on('click', '.register', function(e){
         e.preventDefault();
         
-        $('.popup').html('<p class="popup-header">Личный кабинет закрыт на ремонт.<br>Регистрации не будет до 1 января.</p>')
+        $('.popup').html('<p class="popup-header">Личный кабинет закрыт на ремонт.<br>Регистрации не будет до 1 января.</p><a href="https://yandex.ru/" class="register">Войти</a>');
+        console.log(new Date());
     });
+    
+    
 });
 
