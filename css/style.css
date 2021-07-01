@@ -208,7 +208,6 @@ aside {
 	left: 0;
 }
 
-
 /* catalog */
 .catalog {
 	display: flex;
@@ -227,7 +226,35 @@ aside {
 	background: pink;
 }
 
-
+/* order */
+.order {
+	width: 100%;
+}
+.nihil {
+	display: none;
+}
+.rub:after, .sum:after, .allsum:after {
+	content: ' \20bd';
+}
+.num input {
+	border: 0;
+	width: 50px;
+}
+.del {
+	width: 60px;
+}
+.del > div {
+	width: 24px;
+	height: 24px;
+	border-radius: 24px;
+	text-align: center;
+	font: normal 24px/24px Arial;
+	transform: rotate(45deg);
+	transform-origin: center;
+	background: red;
+	color: white;
+	cursor: pointer;
+}
 
 /* different screens */
 @media (min-width: 576px) {
