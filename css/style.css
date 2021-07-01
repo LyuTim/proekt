@@ -233,6 +233,13 @@ aside {
 .nihil {
 	display: none;
 }
+.empty .nihil {
+	display: block;
+}
+.empty .table,
+.empty #orderdata {
+	display: none;
+}
 .rub:after, .sum:after, .allsum:after {
 	content: ' \20bd';
 }
